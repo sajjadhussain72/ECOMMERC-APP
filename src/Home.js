@@ -15,12 +15,12 @@ const Home = () => {
     par:"Hussain Store offers a diverse range of high-quality products, providing customers with a seamless shopping experience. Discover unique items that cater to various needs and preferences."
   }
   return (
-    <>
+    <div>
       <HeroSection myData={data}  ImgData={image}  PData={par} />
       <FeatureProduct />
       <Services />
       <Trusted />
-    </>
+    </div>
   );
 };
 

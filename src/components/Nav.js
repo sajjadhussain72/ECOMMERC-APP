@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
@@ -138,7 +138,7 @@ const Nav = () => {
         transition: all 3s linear;
 
         .navbar-link {
-          font-size: 4.2rem;
+          font-size: 5.2rem;
         }
       }
       .cart-trolley--link {
@@ -169,7 +169,7 @@ const Nav = () => {
       
       <div className={menuIcon ? "navbar active" : "navbar"}>
 
-        <ul className="navbar-lists">
+        <ul className="navbar-lists me-5">
           <li>
             <NavLink
               to="/"
@@ -203,7 +203,9 @@ const Nav = () => {
             </NavLink>
           </li>
           <li >
-          <button type="button" className="btn btn-success mx-0 fs-3 py-0 px-2">Login</button>
+            <NavLink to="/form">
+          <button type="button" className="btn btn-success mx-0 fs-4 py-0 px-2">Login</button>
+          </NavLink>
           </li>
           <li>
             <NavLink to="/cart" className="navbar-link cart-trolley--link">
@@ -211,7 +213,7 @@ const Nav = () => {
               <span className="cart-total--item"> {total_item} </span>
             </NavLink>
           </li>
-
+         
         </ul>
 
         {/* two button for open and close of menu */}

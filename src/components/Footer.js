@@ -35,7 +35,7 @@ const Footer = () => {
               <form action="#">
                 <input type="email" name="email" placeholder="YOUR E-MAIL" />
 
-                <input type="submit" value="subscribe" />
+                <input className="py-2 px-5" type="submit" value="subscribe" />
               </form>
             </div>
             <div className="footer-social">

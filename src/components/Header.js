@@ -8,7 +8,7 @@ const Header = () => {
     <MainHeader>
       <NavLink to="/">
         {/* <img src="./images/logo.png" alt="my logo img" /> */}
-        <h2 className="text-warning-emphasis">HUSSAIN WEBSITE</h2>
+        <span className="text-warning-emphasis fw-bold fs-1 ps-5 ms-5 fst-italic">HUNZA.COM</span>
       </NavLink>
       <Nav />
     </MainHeader>
@@ -22,8 +22,8 @@ const MainHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-
+  position: static;
+  top: 0;
   .logo {
     height: 5rem;
   }
