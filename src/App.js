@@ -1,7 +1,10 @@
+
+import "./App.css"
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
+import Form from "./Form";
 import Products from "./Products";
 import Contact from "./contact";
 import Cart from "./Cart";
@@ -42,23 +45,24 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <GlobalStyle />
-        
-        <Header />
-        <TrustedONProduct />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/singleproduct/:id" element={<SingleProduct />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </ThemeProvider>
+    <Router>
+      <GlobalStyle />
+      
+      <Header />
+      <TrustedONProduct />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/singleproduct/:id" element={<SingleProduct />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+      <Footer />
+    </Router>
+  </ThemeProvider>
   );
 };
 

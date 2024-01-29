@@ -18,7 +18,6 @@ const About = () => {
     <div>
       {myName}
       <HeroSection myData={data}  ImgData={image} PData={par} />
-      <h2>sajjad hussain</h2>
       </div>
   )
   }
