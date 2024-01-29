@@ -10,8 +10,8 @@ const FeatureProduct = () => {
   }
 
   return (
-    <Wrapper className="section ">
-       <div className="container ">
+    <Wrapper className="section " >
+       <div className="container " style={{height:"100vh"}}>
         <div className="intro-data mx-5">Check Now!</div>
         <div className="common-heading mx-5">Our Feature Services</div>
         <div className="grid grid-three-column mx-5">
@@ -31,6 +31,7 @@ const Wrapper = styled.section`
 
   .container {
     max-width: 120rem;
+    height:100vh
   }
 
   figure {

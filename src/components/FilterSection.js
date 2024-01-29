@@ -30,11 +30,7 @@ const FilterSection = () => {
   const categoryData = getUniqueData(all_products, "category");
   const companyData = getUniqueData(all_products, "company");
   const colorsData = getUniqueData(all_products, "colors");
-  // console.log(
-  //   "🚀 ~ file: FilterSection.js ~ line 23 ~ FilterSection ~ companyData",
-  //   colorsData
-  // );
-
+ 
   return (
     <Wrapper>
       <div className="filter-search">
@@ -67,7 +63,7 @@ const FilterSection = () => {
           })}
         </div>
       </div>
-
+    
       <div className="filter-company">
         <h3>Company</h3>
 
@@ -87,10 +83,9 @@ const FilterSection = () => {
           </select>
         </form>
       </div>
-
+      
       <div className="filter-colors colors">
         <h3>Colors</h3>
-
         <div className="filter-color-style">
           {colorsData.map((curColor, index) => {
             if (curColor === "all") {

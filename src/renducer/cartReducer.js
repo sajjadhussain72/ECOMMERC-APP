@@ -120,42 +120,42 @@ const cartReducer = (state, action) => {
   //   };
   // }
 
-  // if (action.type === "CART_TOTAL_PRICE") {
-  //   let total_price = state.cart.reduce((initialVal, curElem) => {
-  //     let { price, amount } = curElem;
+  if (action.type === "CART_TOTAL_PRICE") {
+    let total_price = state.cart.reduce((initialVal, curElem) => {
+      let { price, amount } = curElem;
 
-  //     initialVal = initialVal + price * amount;
+      initialVal = initialVal + price * amount;
 
-  //     return initialVal;
-  //   }, 0);
+      return initialVal;
+    }, 0);
 
-  //   return {
-  //     ...state,
-  //     total_price,
-  //   };
-  // }
-
-  if (action.type === "CART_ITEM_PRICE_TOTAL") {
-    let { total_item, total_price } = state.cart.reduce(
-      (accum, curElem) => {
-        let { price, amount } = curElem;
-
-        accum.total_item += amount;
-        accum.total_price += price * amount;
-
-        return accum;
-      },
-      {
-        total_item: 0,
-        total_price: 0,
-      }
-    );
     return {
       ...state,
-      total_item,
       total_price,
     };
   }
+
+  // if ( action.type !== null && action.type !== undefined  && action.type === "CART_ITEM_PRICE_TOTAL" ) {
+  //   let { total_item, total_price } = state.cart.reduce(
+  //     (accum, curElem) => {
+  //       let { price, amount } = curElem;
+
+  //       accum.total_item += amount;
+  //       accum.total_price += price * amount;
+
+  //       return accum;
+  //     },
+  //     {
+  //       total_item: 0,
+  //       total_price: 0,
+  //     }
+  //   );
+  //   return {
+  //     ...state,
+  //     total_item,
+  //     total_price,
+  //   };
+  // }
 
   return state;
 };

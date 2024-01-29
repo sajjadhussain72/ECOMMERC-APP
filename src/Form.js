@@ -107,7 +107,6 @@ const Form = () => {
             {password.isTouched && password.value.length < 8 ? (
               <PasswordErrorMessage />
             ) : null}
-
             <AiOutlineEye
               className="  input"
               type="button"

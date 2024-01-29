@@ -14,15 +14,15 @@ const HeroSection = ({ myData ,ImgData,PData}) => {
             <p className="intro-data">Welcome to </p>
             <h1> {name} </h1>
             <p>{par} </p>
-            <NavLink>
-              <Button>show now</Button>
+            <NavLink to="/products">
+              <Button >show now</Button>
             </NavLink>
           </div>
           {/* our homepage image  */}
           <div className="hero-section-image">
             <figure>
               <img src={image}
-                alt="hero-section-photo"
+                alt="hero-section-img and its associated content on the page"
                 className="img-style"
               />
             </figure>

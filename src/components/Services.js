@@ -6,7 +6,7 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 
 const Services = () => {
   return (
-    <Wrapper>
+    <Wrapper style={{height:"100vh"}}>
       <div className="container px-5">
         <div className="grid grid-three-column">
           <div className="services-1">
